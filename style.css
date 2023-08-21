@@ -1,0 +1,337 @@
+/* Estilos generales */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: black;
+  padding: 30px 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+  z-index: 10000;
+  position: sticky;
+  top: 0;
+
+}
+
+header .logo a {
+  font-family: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.aqui {
+  font-weight: bold;
+  color: yellow;
+  text-decoration: none
+}
+
+.aviso-impor {
+  background-color: #f2dede;
+  color: #a94442;
+  border: 1px solid #ebccd1;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.enlace-whastapp .whastapp-app {
+  color: yellow;
+}
+
+.logo {
+  float: left;
+}
+
+.logo a {
+  color: #333;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+nav {
+  float: right;
+
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.producto {
+  width: 33%;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.imagenes {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.imagenes img {
+  object-fit: scale-down;
+}
+
+/* Estilos para el elemento select */
+label {
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+select {
+  padding: 8px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  width: 200px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.producto {
+  width: 300px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.producto img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.producto h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.producto p {
+  margin-bottom: 10px;
+}
+
+.producto .precio {
+  font-weight: bold;
+}
+
+.producto .btn-comprar {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+
+/* Estilos CSS para posicionar el enlace en el lado derecho y crear el botón */
+.whatsapp-link {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background-color: #25D366;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease-in-out;
+}
+
+.whatsapp-link:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-link img {
+  width: 40px;
+  height: 40px;
+}
+
+#burbuja-chat {
+  position: absolute;
+  top: 65px;
+  background-color: #25D366;
+  color: #FFFFFF;
+  border-radius: 20px;
+  width: 80%;
+  max-width: 300px;
+  height: auto;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+  right: 20px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  #burbuja-chat {
+    font-size: 12px;
+    border-radius: 15px;
+  }
+
+  #burbuja-chat {
+    position: absolute;
+    top: 65px;
+    background-color: #25D366;
+    color: #FFFFFF;
+    border-radius: 20px;
+    width: 70%;
+    max-width: 150px;
+    height: auto;
+    padding: 8px;
+    text-align: center;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+    right: 20px;
+  }
+
+  .productos {
+    /*flex-direction: column;*/
+    align-items: center;
+  }
+
+  header nav ul {
+    display: flex;
+
+  }
+
+  header nav ul li {
+    margin: 10px;
+    margin-top: 0%;
+  }
+
+  .producto {
+    width: 90%;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  select {
+    width: 50%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    padding: 5px;
+  }
+}
+
+/*modal*/
+
+    /* Estilos para el modal */
+    .modal {
+      display: none; /* Inicialmente oculto */
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    }
+
+    .modal-contenido {
+      background-color: #fff;
+      position: absolute;
+      top:50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      max-width: 600px;
+      width: 90%;
+    }
+
+    /* Estilos para el botón de cierre */
+  #cerrarModal {
+  background-color: #ccc;
+  border: none;
+  color: #fff;
+  padding: 8px 12px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#cerrarModal:hover {
+  background-color: #999;
+}
+
+.inpt-termi{
+  display: flex ;
+  gap: 10px;
+}
+
+.terminosCheckbox{
+  font-size: 16px;
+}
+    
+
+@media (max-width: 480px) {
+  .logo a {
+    font-size: 1.2em;
+  }
+
+  nav li {
+    display: block;
+    margin: 5px 0;
+  }
+
+  .producto {
+    width: 100%;
+  }
+
+}

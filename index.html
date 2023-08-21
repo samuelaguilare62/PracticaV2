@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tienda online </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="#">Tienda online</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="filt">
+    <label for="categoria">Selecciona una categoría:</label>
+    <select id="categoria" onchange="filterProducts()">
+      <option value="todos">Todos los productos</option>
+      <option value="caballero">Ropa de caballero</option>
+      <option value="dama">Ropa de dama</option>
+      <option value="niñas">niña</option>
+      <option value="cobijas">Cobijas</option>
+    </select>
+  </div>
+
+  <div id="burbuja-chat">
+    <p>Para obtener información de cómo comprar en esta página ingresa <a href="tutorial.html" class="aqui">AQUI</a></p>
+  </div>
+  <!--esto lo puedes quitar si es que quieres entregar en mas lugares-->
+  <p class="aviso-impor">Por el momento no enviamos pedidos a muy larga distancia , por lo mientras estamos entregando pedidos solamente en "lugar".<br></p>
+
+  <!-- Modal -->
+    <div id="miModal" class="modal">
+    <div class="modal-contenido">
+      <h1>ANTES DE CONTINUAR</h1>
+      <p>FAVOR DE CHECAR NUESTRO <a href="/terminos.html">TERMINOS Y CONDICIONES.</a></p>
+      <div class="inpt-termi">
+      <input type="checkbox" id="terminosCheckbox">
+      <label for="terminosCheckbox" class="terminosCheckbox">Estoy de acuerdo con los Términos y Condiciones</label>
+      </div>
+      <button id="cerrarModal">aceptar</button>
+      <button id="noAcepto">No Acepto</button>
+    </div>
+  </div> 
+
+  <main>
+
+    <section class="productos">
+      <div class="producto">
+        <img src="ruta-de-la-imagen" alt="Nombre del producto">
+        <h3>Nombre del producto</h3>
+        <p>Descripción del producto</p>
+        <span class="precio">$XX.XX</span>
+        <button class="btn-comprar">Comprar</button>
+      </div>
+      <div class="producto">
+        <img src="ruta-de-la-imagen" alt="Nombre del producto">
+        <h3>Nombre del producto</h3>
+        <p>Descripción del producto</p>
+        <span class="precio">$XX.XX</span>
+        <button class="btn-comprar">Comprar</button>
+      </div>
+      <div class="producto">
+        <img src="ruta-de-la-imagen" alt="Nombre del producto">
+        <h3>Nombre del producto</h3>
+        <p>Descripción del producto</p>
+        <span class="precio">$XX.XX</span>
+        <button class="btn-comprar">Comprar</button>
+      </div>
+      <div class="producto">
+        <img src="ruta-de-la-imagen" alt="Nombre del producto">
+        <h3>Nombre del producto</h3>
+        <p>Descripción del producto</p>
+        <span class="precio">$XX.XX</span>
+        <button class="btn-comprar">Comprar</button>
+      </div>
+      <div class="producto">
+        <img src="ruta-de-la-imagen" alt="Nombre del producto">
+        <h3>Nombre del producto</h3>
+        <p>Descripción del producto</p>
+        <span class="precio">$XX.XX</span>
+        <button class="btn-comprar">Comprar</button>
+      </div>
+      <div class="producto">
+        <img src="ruta-de-la-imagen" alt="Nombre del producto">
+        <h3>Nombre del producto</h3>
+        <p>Descripción del producto</p>
+        <span class="precio">$XX.XX</span>
+        <button class="btn-comprar">Comprar</button>
+      </div>
+      <div class="producto">
+        <img src="ruta-de-la-imagen" alt="Nombre del producto">
+        <h3>Nombre del producto</h3>
+        <p>Descripción del producto</p>
+        <span class="precio">$XX.XX</span>
+        <button class="btn-comprar">Comprar</button>
+      </div>
+      <div class="producto">
+        <img src="ruta-de-la-imagen" alt="Nombre del producto">
+        <h3>Nombre del producto</h3>
+        <p>Descripción del producto</p>
+        <span class="precio">$XX.XX</span>
+        <button class="btn-comprar">Comprar</button>
+      </div>
+    </section>
+  </main>
+  <!-- quita "numerotelefonico" y cambialo por tu numero-->
+  <a id="enlace-whatsapp" class="whatsapp-link" href="https://wa.me/+nuemerotelefonico?text=%C2%A1HOLA!%20Me%20gustar%C3%ADa%20comprar%20el%20siguiente%20art%C3%ADculo%20(nombre%20del%20art%C3%ADculo)%20en%20la%20talla%20(la%20talla%20del%20art%C3%ADculo)">
+    <img src="img/Whastapp-icon.png" class="whastapp-app" alt="">
+  </a>
+
+</body>
+<script src="main.js">
+
+</script>
+
+</body>
+
+</html>
